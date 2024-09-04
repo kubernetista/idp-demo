@@ -2,8 +2,8 @@ global:
   domain: argocd.127.0.0.1.nip.io
 configs:
   secret:
-    argocdServerAdminPassword: "$2a$10$m3eTlEdRen0nS86c5Zph5u/bDFQMcWZYdG3NVdiyaACCqoxLJaz16"
-    argocdServerAdminPasswordMtime: "2021-11-08T15:04:05Z"
+    argocdServerAdminPassword: "$2y$10$QpI0XbmM13sbHpxIt.C0sOAfGUwCy9w19SoSjQt1tr9kT1yHHUb4C"
+    argocdServerAdminPasswordMtime: "2024-09-04T15:19:34Z"
   cm:
     application.resourceTrackingMethod: annotation
   params:
