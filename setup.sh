@@ -4,7 +4,7 @@ set -e
 gum style \
 	--foreground 212 --border-foreground 212 --border double \
 	--margin "1 2" --padding "2 4" \
-	'Setup for the 
+	'Setup for the
 "How To Create A Complete Internal Developer Platform (IDP)?"
 video.'
 
@@ -207,7 +207,7 @@ elif [[ "$HYPERSCALER" == "aws" ]]; then
 
     AWS_ACCESS_KEY_ID=$(gum input --placeholder "AWS Access Key ID" --value "$AWS_ACCESS_KEY_ID")
     echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> .env
-    
+
     AWS_SECRET_ACCESS_KEY=$(gum input --placeholder "AWS Secret Access Key" --value "$AWS_SECRET_ACCESS_KEY" --password)
     echo "export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" >> .env
 
@@ -296,7 +296,7 @@ if [[ "$HYPERSCALER" == "aws" ]]; then
 
     INGRESS_HOSTNAME=$(kubectl --namespace traefik get service traefik --output jsonpath="{.status.loadBalancer.ingress[0].hostname}")
 
-    INGRESS_HOST=$(dig +short $INGRESS_HOSTNAME | sed -n 1p) 
+    INGRESS_HOST=$(dig +short $INGRESS_HOSTNAME | sed -n 1p)
 
 else
 
